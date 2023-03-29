@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_css.css">
+</head>
+<body>
+    <section class="page_body">
+     <div class="para"><H1>Facebook</H1> <p>Facebook helps you connect and share with the people in your life.</p></div>
+     <div class="all">
+        <div class="form_div">
+            <form  onsubmit="return formvaldate()" action="Facebook.html">
+                <input id="email_login" type="text" placeholder="Email address or phone number">
+                <input id="pass_login" type="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="" class="forget">Forgotten Password?</a>
+                <hr>
+            </form>
+            <button id="create" onclick="openNav()">Create New Account</button>
+        </div>
+         <div><p class="lastp"><a id="lasta" href="" >Create a Page</a> for a celebrity, brand or business</p></div>
+     </div>
+    </section>
+    <section class="signup" id="signup1">
+        <div>
+            <form action="Facebook.html" onsubmit="return signvalidate()">
+                <div class="head">
+                    <div>
+                        <h1>Sign up</h1>
+                        <p id="h1p">its quick and easy</p>
+                    </div>
+                    <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+                </div>
+                <hr>
+              <div class="flex_input" >
+                <input id="fname" type="text" placeholder="First name">
+                <input id="lname" type="text" placeholder="Surname">
+              </div>
+              <div class="block_input">
+                <input id="email" type="text" placeholder="Mobile number or email address">
+                <input id="pass" type="password" placeholder="New password">
+              </div>
+              <div class="date">
+                <p>Date of birth</p>
+                <select id="day" name="" id="day">
+                    <option value="1" >1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select id="month" name="" id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March" selected>March</option>
+                    <option value="April">April</option>
+                </select>
+                <select id="year" name="" id="year">
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+              </div>
+              <div class="gender">
+                <p>Gender</p>
+                <div class="gender_d">
+                    <div><label for="male">Male</label> <input type="radio" name="gender" id="male"></div>
+                    <div><Label for="female">Female</Label><input type="radio" name="gender" id="female"> </div>
+                </div>
+              </div>
+              <p class="pfooter">
+                People who use our service may have uploaded your contact information to Facebook. Learn more.By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+              </p>
+              <button class="form2_btn" type="submit">sign up</button>
+            </form>
+        </div>
+    </section>  
+    <script src="main.js"></script>
+</body>
+</html>
